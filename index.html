@@ -17,11 +17,11 @@
     <section>
         <div>
             <span></span>
-            <span>云视界阅读包</span>
+            <span id="title">云视界阅读包</span>
             <span></span>
         </div>
         <div>
-            <span>原价:29.9元/月</span>
+            <span id="price">原价:29.9元/月</span>
             <span>现价:10元/月</span>
         </div>
         <div>
@@ -71,14 +71,22 @@
 </html>
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/swiper-3.4.2.jquery.min.js"></script>
-<script src="js/index.js"></script>
 <script>
+    (function(global){
+        function remChange(){
+            document.documentElement.style.fontSize=100*document.documentElement.clientWidth/750+'px';
+        }
+        remChange();
+        global.addEventListener('resize',remChange,false);
+    })(window);
+
     window.onload = function() {
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
             loop: true,
             effect: 'coverflow',
             slidesPerView: 3.25,
+            touchRatio : 0.5,
             centeredSlides: false,
             coverflow: {
                 rotate: 0,
@@ -86,6 +94,23 @@
                 depth: 200,
                 modifier: 2,
                 slideShadows : false,
+            },
+            onTouchEnd: function(swiper){
+                var $title = $('#title'),
+                    $price = $('#price');
+                if(swiper.realIndex === 0){
+                    $title.text('云视界阅读包');
+                    $price.text('原价:29.9元/月');
+                }else if(swiper.realIndex === 1){
+                    $title.text('云视界生活包');
+                    $price.text('原价:25元/月');
+                }else if(swiper.realIndex === 2){
+                    $title.text('云视界来电包1');
+                    $price.text('原价:23元/月');
+                }else if(swiper.realIndex === 3){
+                    $title.text('云视界来电包2');
+                    $price.text('原价:21元/月');
+                }
             }
         });
     }
