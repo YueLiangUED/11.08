@@ -84,12 +84,14 @@
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
             loop: true,
+            slidesPerView : 'auto',
+            loopedSlides :4,
             effect: 'coverflow',
             slidesPerView: 3.25,
             touchRatio : 0.5,
             centeredSlides: false,
             coverflow: {
-                rotate: 0,
+                rotate: 5,
                 stretch: -25,
                 depth: 200,
                 modifier: 2,
