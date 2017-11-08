@@ -95,9 +95,10 @@
                 modifier: 2,
                 slideShadows : false,
             },
-            onTouchEnd: function(swiper){
+            onTransitionEnd: function(swiper){
                 var $title = $('#title'),
                     $price = $('#price');
+                console.log(swiper.realIndex);
                 if(swiper.realIndex === 0){
                     $title.text('云视界阅读包');
                     $price.text('原价:29.9元/月');
