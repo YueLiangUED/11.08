@@ -116,7 +116,6 @@ section>section>div:nth-child(3)>div:nth-child(3)>span{
     width: 3.28rem;
     height: .3rem;
     background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f14742), to(rgba(241, 71, 66, 0.5)));
-    //background: rgba(241, 71, 66, .95);
     z-index: 10;
 }
 section>section>div:nth-child(3)>div:nth-child(3)>span:nth-child(1){
