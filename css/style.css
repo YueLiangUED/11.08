@@ -114,18 +114,18 @@ section>section>div:nth-child(3)>div:nth-child(3){
 section>section>div:nth-child(3)>div:nth-child(3)>span{
     position: absolute;
     width: 3.28rem;
-    height: .4rem;
-    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f14742), to(rgba(238, 70, 50, 0.5)));
+    height: .5rem;
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f14742), to(rgba(238, 70, 50, 0.3)));
     z-index: 10;
 }
 section>section>div:nth-child(3)>div:nth-child(3)>span:nth-child(1){
     top: -.02rem;
-    box-shadow: 0px 25px 10px 8px rgba(241,71,66,.5);
+    box-shadow: 0px 25px 15px 8px rgba(241,71,66,.3);
 }
 section>section>div:nth-child(3)>div:nth-child(3)>span:nth-child(2){
     bottom: -.02rem;
-    background:-webkit-gradient(linear, 0 bottom, 0 0, from(#f14742), to(rgba(238, 70, 50, 0.8)));
-    box-shadow: 0px -25px 5px 5px rgba(241,71,66,.5);
+    background:-webkit-gradient(linear, 0 bottom, 0 0, from(#f14742), to(rgba(238, 70, 50, 0.3)));
+    box-shadow: 0px -25px 15px 8px rgba(241,71,66,.3);
 }
 img{
     max-width: 100%;
@@ -137,7 +137,6 @@ img{
 }
 .swiper-container .swiper-slide{
     width: 3.28rem;
-    height: 1.64rem;!important;
 }
 section>section>div:nth-child(4){
     position: relative;
@@ -184,8 +183,11 @@ footer>div:nth-child(1) span:nth-child(3){
     background-size: cover;
 }
 footer>div:nth-child(2){
-    padding: 0 .52rem .2rem .52rem;
+    padding: 0 .52rem .2rem .66rem;
     font-size: .22rem;
     text-align: justify;
     color: #ffedd8;
+}
+footer>div:nth-child(2) p{
+    text-indent: -1.6em;
 }
