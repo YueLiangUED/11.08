@@ -80,6 +80,7 @@ section>section>div:nth-child(2) span:nth-child(2){
     font-weight: bold;
     text-align: right;
     color: #ffd229;
+    z-index: 99;
 }
 section>section>div:nth-child(3){
     position: relative;
@@ -124,7 +125,7 @@ section>section>div:nth-child(3)>div:nth-child(3)>span:nth-child(1){
     box-shadow: 0px 17px 30px 30px rgba(241,71,66,.3);
 }
 section>section>div:nth-child(3)>div:nth-child(3)>span:nth-child(2){
-    bottom: -.02rem;
+    bottom: 0;
     background:-webkit-gradient(linear, 0 bottom, 0 0, from(#f14742), to(rgba(241, 71, 66, 0.3)));
     box-shadow: 0px -18px 30px 30px rgba(241,71,66,.3);
 }
