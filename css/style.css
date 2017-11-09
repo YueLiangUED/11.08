@@ -61,7 +61,7 @@ section>section>div:nth-child(1) span:nth-child(3){
     background-size: cover;
 }
 section>section>div:nth-child(2){
-    margin: .35rem auto 0;
+    margin: .15rem auto 0.2rem;
     position: relative;
     width: 5.4rem;
     height: .4rem;
